@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "importedAt": "2026-07-03T07:40:53.506Z",
+  "campaignId": null,
+  "slug": "nakameguro-cafe",
+  "adoptExisting": true,
+  "sourceType": "urlSnapshot",
+  "sourceUrl": "https://guro-local-info.pbn-builder.xyz/",
+  "copiedFiles": 2,
+  "copiedBytes": 19995,
+  "fetchedAssets": 1,
+  "skippedAssets": 0,
+  "skippedSymlinks": 0
+}

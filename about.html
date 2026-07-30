@@ -3,165 +3,471 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정보 | Nakameguro Cafe 안내</title>
-    <meta name="description" content="나카메구로 지역의 모든 카페 정보, 이제 헤맬 필요 없다. 이 페이지가 당신의 생존에 필요한 최소한의 정보를 집약했다. 검증되지 않은 감성팔이 싹 다 빼고 핵심만 전달한다. (Nakameguro cafe 안내)" />
-    <meta name="keywords" content="Nakameguro cafe, 나카메구로 카페, 도쿄 카페, 나마네구로 맛집, 카페 추천, Nakameguro 정보">
-    <link rel="canonical" href="https://yourdomain.com/nakameguro-cafe-guide">
-    <!-- 필수 메타 태그 -->
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <!-- OG / Twitter Card 설정 (필수) -->
-    <meta property="og:title" content="Nakameguro Cafe 안내 | 팩트 체크">
-    <meta property="og:description" content="나카메구로 카페에 대한 모든 것. 감성팔이는 필요 없어. 오직 '이거다' 싶은 곳만 선별했다." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourdomain.com/nakameguro-cafe-guide" />
-    <!-- Twitter Card (X) 설정 -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@YourHandle" />
-    <meta name="twitter:creator" content="@YourHandle" />
+    <title>가양 풀싸롱 상세 정보 — 지역 비교 및 조건별 선택 가이드</title>
+    <meta name="description" content="가양 지역 풀싸롱 선택 시 고려할 핵심 기준을 안내합니다. 인접 지역과의 차이, 이동 시간, 이용 흐름을 비교하여 빠른 결정을 도와드립니다.">
+    <meta name="keywords" content="가양 풀싸롱, 가양풀싸롱, 가양 풀싸롱 추천, 가양 풀싸롱 가이드, 가양 유흥, 마곡 풀싸롱, 염창 풀싸롱, 등촌 풀싸롱">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <link rel="canonical" href="https://gayang-fullsalon-note.pickdesk.online/about.html">
+    <meta property="og:title" content="가양 풀싸롱 추천 가이드 — 상세 정보와 조건별 선택법">
+    <meta property="og:description" content="가양을 중심으로 마곡·염창·등촌과의 차이를 비교하고 인원·시간·목적에 맞는 기준을 상세히 안내합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gayang-fullsalon-note.pickdesk.online/about.html">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="naver-site-verification" content="dummycode">
+    <style>
+        /* ===== Reset & Base ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; line-height: 1.6; -webkit-text-size-adjust: 100%; }
+        body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #ffffff; }
+        img, svg { max-width: 100%; height: auto; display: block; }
+        a { color: #1a1a1a; text-decoration: none; transition: color 0.2s ease; }
+        a:hover { color: #0052cc; }
+        ul, ol { list-style: none; }
+
+        /* ===== Container ===== */
+        .m-wrap-2kpa {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        @media (max-width: 768px) {
+            .m-wrap-2kpa { padding: 0 16px; }
+        }
+
+        /* ===== Sticky Header ===== */
+        .x-wrap-euic {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #e0e0e0;
+            transition: box-shadow 0.2s ease;
+        }
+        .x-wrap-euic.scrolled { box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        .x-wrap-euic .m-wrap-2kpa {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .x-wrap-euic .logo a {
+            font-weight: 700;
+            font-size: 1.125rem;
+            letter-spacing: -0.01em;
+        }
+
+        /* ===== Navigation ===== */
+        .nav-list-9q {
+            display: flex;
+            gap: 32px;
+        }
+        .nav-list-9q li a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-list-9q li a:hover,
+        .nav-list-9q li a.active { border-bottom-color: #0052cc; color: #0052cc; }
+
+        /* ===== Hamburger ===== */
+        .hamburger-4p {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px 0;
+        }
+        .hamburger-4p span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #1a1a1a;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            .nav-list-9q {
+                position: fixed;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background: #fff;
+                flex-direction: column;
+                gap: 0;
+                padding: 16px 24px;
+                border-bottom: 1px solid #e0e0e0;
+                transform: translateY(-120%);
+                opacity: 0;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                pointer-events: none;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            }
+            .nav-list-9q.open {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .nav-list-9q li a {
+                padding: 14px 0;
+                border-bottom: 1px solid #f0f0f0;
+                font-size: 1rem;
+            }
+            .nav-list-9q li:last-child a { border-bottom: none; }
+            .hamburger-4p { display: flex; }
+        }
+
+        /* ===== Typography ===== */
+        h1, h2, h3 { font-weight: 600; line-height: 1.3; }
+        h1 { font-size: 2.25rem; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+        h2 { font-size: 1.625rem; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+        h3 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+        p { margin-bottom: 1.25rem; text-align: justify; }
+        .section-divider { border: none; height: 1px; background: #e8e8e8; margin: 2rem 0; }
+
+        /* ===== Intro ===== */
+        .intro-box-2b {
+            background: #f8f9fb;
+            border-left: 4px solid #0052cc;
+            padding: 24px 28px;
+            border-radius: 6px;
+            margin: 2rem 0 2.5rem;
+        }
+        .intro-box-2b p:last-child { margin-bottom: 0; }
+
+        /* ===== Card Grid ===== */
+        .card-grid-7w {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 1.5rem 0;
+        }
+        .card-ht {
+            background: #ffffff;
+            border: 1px solid #ebebeb;
+            border-radius: 10px;
+            padding: 24px 20px;
+            transition: box-shadow 0.25s ease, transform 0.2s ease;
+        }
+        .card-ht:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.04); transform: translateY(-2px); }
+        .card-ht h3 { margin-top: 0; font-size: 1.125rem; margin-bottom: 0.5rem; }
+        .card-ht p { font-size: 0.9375rem; margin-bottom: 0.5rem; }
+        .card-ht .tag {
+            display: inline-block;
+            background: #eef3fc;
+            color: #0052cc;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 2px 10px;
+            border-radius: 20px;
+            margin-bottom: 0.75rem;
+        }
+
+        /* ===== Comparison Table ===== */
+        .table-compare-3p {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9375rem;
+        }
+        .table-compare-3p th,
+        .table-compare-3p td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .table-compare-3p th {
+            background: #f6f7f9;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+        .table-compare-3p tr:last-child td { border-bottom: none; }
+        .table-compare-3p .highlight { background: #f8fbff; }
+
+        /* ===== FAQ ===== */
+        .faq-list-5d { margin: 2rem 0; }
+        .faq-item-8j {
+            border: 1px solid #ececec;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .faq-item-8j summary {
+            padding: 18px 22px;
+            font-weight: 500;
+            cursor: pointer;
+            background: #fafbfc;
+            transition: background 0.15s;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item-8j summary::-webkit-details-marker { display: none; }
+        .faq-item-8j summary::after {
+            content: "＋";
+            font-size: 1.2rem;
+            color: #888;
+            transition: transform 0.2s;
+        }
+        .faq-item-8j[open] summary::after { transform: rotate(45deg); }
+        .faq-item-8j summary:hover { background: #f1f3f6; }
+        .faq-item-8j .faq-answer {
+            padding: 4px 22px 18px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        /* ===== Footer ===== */
+        .footer-6z {
+            margin-top: 4rem;
+            padding: 2rem 0 3rem;
+            border-top: 1px solid #e8e8e8;
+            text-align: center;
+            font-size: 0.8125rem;
+            color: #999;
+        }
+
+        /* ===== Utility ===== */
+        .text-small { font-size: 0.875rem; color: #888; }
+        .mt-1 { margin-top: 1rem; }
+        .mb-1 { margin-bottom: 1rem; }
+        .flex-center { display: flex; align-items: center; gap: 8px; }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1.375rem; }
+            .card-grid-7w { grid-template-columns: 1fr; }
+            .table-compare-3p { font-size: 0.8125rem; }
+            .table-compare-3p th,
+            .table-compare-3p td { padding: 10px 12px; }
+        }
+
+        /* ===== Smooth scroll ===== */
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
 <body>
-
-    <!-- [nav-present] - 공통 네비게이션 바 (디자인 시스템 유지) -->
-    <header class="main-nav-bar">
-        <div class="logo">[NKM GURU]</div>
-        <ul class="nav-links">
-            <li><a href="/nakameguro-cafe" class="active">☕ 카페 리스트</a></li>
-            <li><a href="/nakameguro-info"> 지역 정보 (HERE)</a></li> <!-- 현재 페이지 -->
-            <li><a href="/nakameguro-review">⭐ 베스트 리뷰</a></li>
-            <li><a href="/nakameguro-map">️ 지도 보기</a></li>
-        </ul>
+    <header class="x-wrap-euic" id="top-header">
+        <div class="m-wrap-2kpa">
+            <div class="logo"><a href="/" aria-label="가양 풀싸롱 가이드 홈">가양<span style="font-weight:400;">풀싸롱</span></a></div>
+            <nav aria-label="메인 네비게이션">
+                <ul class="nav-list-9q" id="mainNav">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/guide">가이드</a></li>
+                    <li><a href="/info" class="active">정보</a></li>
+                    <li><a href="/review">후기</a></li>
+                </ul>
+                <div class="hamburger-4p" id="hamBtn" aria-label="메뉴 열기" role="button" tabindex="0">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <!-- 메인 컨텐츠 영역 -->
-    <main class="content-container">
-        
-        <!-- 헤더 섹션: 제목과 시그널 강조 -->
-        <section class="page-header neon-glow">
-            <h1 class="title-main">NAKAMEGURO GUIDE // INFO</h1>
-            <p class="subtitle-tagline"> 지역 정보 (Location Signal) | 너, 지금 어디로 가야 할지 모르지?</p>
-        </section>
+    <main class="m-wrap-2kpa">
+        <h1>가양 풀싸롱 상세 정보<br>조건별 선택을 위한 기준</h1>
+        <div class="intro-box-2b">
+            <p>가양 지역의 풀싸롱은 교통 요지라는 입지적 장점과 함께 다양한 업종·스타일의 업소가 밀집되어 있어 처음 방문하는 분이 선택에 어려움을 겪기 쉽습니다. 이 페이지에서는 단순한 업소 나열이 아니라, <strong>인접 지역(마곡·염창·등촌)과의 차이</strong>, <strong>방문 목적·인원·시간대별 기준</strong>, <strong>이동 시간과 이용 흐름</strong>을 체계적으로 정리하여 본인에게 맞는 선택을 빠르게 내릴 수 있도록 돕습니다.</p>
+            <p>유흥 업소 선택은 개인 선호와 상황에 따라 크게 달라지므로, 아래 제시하는 기준을 참고하여 사전에 조건을 명확히 한 후 방문하시길 권장합니다. 모든 정보는 현장 경험과 최근 이용 후기를 바탕으로 작성되었습니다.</p>
+        </div>
 
-<!-- SEO Visual 2: 정보 Brutalist Typography Cards -->
-<div class="seo-visual-cards" role="img" aria-label="Nakameguro cafe 안내 정보 — 신뢰할 수 있는 서비스" 
-     style="display:flex;flex-direction:column;gap:80px;margin:120px auto;max-width:1100px;padding:0 24px">
-  <div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">01</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">특화</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">Nakameguro cafe 안내</div>
-  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">02</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">다수 실적</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">Nakameguro cafe 안내</div>
-  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">03</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">고품질</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">Nakameguro cafe 안내</div>
-  </div>
-</div>
+        <hr class="section-divider">
 
-        <!-- 핵심 요약 섹션 -->
-        <section class="core-summary grid-2x1 mt-lg-3">
-            <div class="card summary-card border-heavy bg-void text-neon-primary">
-                <h2 class="card-title"> 이 지역의 '필수' 키워드</h2>
-                <p class="card-body bold-text">나카메구로는 그냥 예쁜 동네가 아님. 특정 취향이 극단적으로 집결된, **선택과 집중**이 필요한 곳임.</p>
+        <!-- 섹션 1: 입지 특성 -->
+        <h2>1. 가양 풀싸롱의 입지와 접근성</h2>
+        <p>가양역(9호선)을 중심으로 반경 500m 이내에 대부분의 업소가 자리 잡고 있어 대중교통을 이용한 접근이 매우 편리합니다. 9호선 급행이 정차하고, 가양대로·강변북로·올림픽대로가 인접해 있어 강서구·양천구·마포구뿐 아니라 서울 외곽에서도 자차로 30~40분 이내에 도착할 수 있습니다.</p>
+        <p>주변 상권이 풍부하여 방문 전 식사나 방문 후 2차 장소를 찾기에도 유리합니다. 가양동 먹자골목, 대형 마트, 카페 등이 도보 거리에 있어 장시간 대기가 필요할 경우에도 불편함이 적습니다. 또한 인근에 호텔과 모텔이 밀집된 지역이 있어 원거리 방문객이 숙박과 연계하기에도 적합한 환경입니다.</p>
+
+        <!-- 섹션 2: 지역 비교 -->
+        <h2>2. 인접 지역과의 차이점</h2>
+        <p>가양을 중심으로 반경 3km 이내에는 마곡·염창·등촌 등 각기 다른 성격의 풀싸롱 밀집 지역이 있습니다. 아래는 주요 차이점을 표로 정리한 것입니다.</p>
+
+        <div style="overflow-x: auto;">
+            <table class="table-compare-3p">
+                <thead>
+                    <tr>
+                        <th>항목</th><th>가양</th><th>마곡</th><th>염창</th><th>등촌</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>주요 성격</strong></td><td>혼합형 (접대·개인모임)</td><td>비즈니스·프리미엄</td><td>뷰·로맨틱</td><td>젊은 층·캐주얼</td>
+                    </tr>
+                    <tr>
+                        <td><strong>업소 밀도</strong></td><td>높음</td><td>중간</td><td>낮음</td><td>높음</td>
+                    </tr>
+                    <tr>
+                        <td><strong>가격대</strong></td><td>중～중상</td><td>중상～고</td><td>중～중상</td><td>중～중하</td>
+                    </tr>
+                    <tr>
+                        <td><strong>대중교통</strong></td><td>9호선 가양역</td><td>5호선 마곡역</td><td>9호선 염창역</td><td>9호선 등촌역</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td><strong>가양→이동 시간</strong></td><td>기준</td><td>대중교통 10분, 자차 8분</td><td>대중교통 5분, 자차 4분</td><td>대중교통 15분, 자차 12분</td>
+                    </tr>
+                    <tr>
+                        <td><strong>추천 방문 목적</strong></td><td>전반적 모임</td><td>접대·비즈니스</td><td>데이트·소규모</td><td>친목·가벼운 모임</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-small" style="margin-top:-0.5rem;">※ 이동 시간은 평시 기준이며 주말·야간에는 차이가 있을 수 있습니다.</p>
+
+        <p>표에서 보듯 가양은 어느 목적에든 무난하게 대응할 수 있는 밸런스형 지역입니다. 반면 마곡은 접대 문화가 발달해 시설과 서비스 수준이 높은 대신 가격이 비싼 편이고, 염창은 한강 조망을 활용한 이색 경험을 제공하지만 업소 수가 제한적입니다. 등촌은 2030 세대를 겨냥한 캐주얼한 업소가 많아 부담 없이 이용하기 좋으나, 격식 있는 자리에는 다소 부적합할 수 있습니다.</p>
+        <p>방문 전에 이러한 특성을 고려하면 이동 시간을 감안하더라도 더 높은 만족도를 얻을 수 있습니다. 예를 들어 비즈니스 접대라면 가양보다 마곡을 선택하고, 이후 2차는 가양으로 이동하는 식의 동선을 계획할 수 있습니다.</p>
+
+        <hr class="section-divider">
+
+        <!-- 섹션 3: 목적별 선택 기준 -->
+        <h2>3. 방문 목적·조건별 선택 기준</h2>
+        <p>같은 가양 안에서도 인원, 시간대, 예산, 목적에 따라 적합한 업소가 다릅니다. 아래 카드에서 주요 조건별로 접근법을 확인하세요.</p>
+
+        <div class="card-grid-7w">
+            <div class="card-ht">
+                <span class="tag">인원 기준</span>
+                <h3>2인 방문</h3>
+                <p>프라이빗한 분위기를 원한다면 2인 전용 룸을 갖춘 업소가 이상적입니다. 보통 4인실보다 기본 요금이 낮고 서비스 집중도가 높습니다. 단, 일부 업소는 2인 예약을 받지 않거나 최소 인원을 3인으로 설정하기도 하니 예약 시 확인이 필요합니다.</p>
+                <p><strong>확인 포인트:</strong> 2인 룸 유무, 최소 인원 정책, 추가 비용 발생 여부.</p>
             </div>
-            <div class="card summary-card border-heavy bg-void text-neon-secondary">
-                <h2 class="card-title"> 지금 당장 체크해야 할 시그널</h2>
-                <ul class="list-check mt-2">
-                    <li>✔️ **'감성팔이'는 기본.** (물론 전부 다 함)</li>
-                    <li>✔️ **커피 맛?** 최소한 '평타 이상'. 걍 예쁜 것만 고르지 마라.</li>
-                    <li>✔️ **분위기?** 시끄러운 곳 vs 조용한 곳, 니 취향에 맞춰 찍어라.</li>
-                </ul>
+            <div class="card-ht">
+                <span class="tag">인원 기준</span>
+                <h3>4인 이상 단체</h3>
+                <p>넓은 룸과 충분한 음향 시스템을 갖춘 업소를 우선 고려하세요. 인원이 많을수록 1인당 단가가 낮아지는 패키지를 제공하는 곳이 많지만, 대신 서비스 질이 분산될 수 있으므로 사전에 구체적인 코스를 문의하는 것이 좋습니다.</p>
+                <p><strong>확인 포인트:</strong> 최대 수용 인원, 단체 패키지 가격, 진행 가능한 이벤트(생일, 환영회 등).</p>
             </div>
-        </section>
+            <div class="card-ht">
+                <span class="tag">시간대 기준</span>
+                <h3>주간 (오후~저녁 전)</h3>
+                <p>오후 2~6시 사이는 상대적으로 한산하고 가격이 저렴한 타임 스페셜을 운영하는 업소가 많습니다. 조용한 분위기를 선호하거나 예산을 절약하려는 방문객에게 적합합니다. 다만 업소에 따라 주간에는 일부 서비스가 제한될 수 있습니다.</p>
+                <p><strong>확인 포인트:</strong> 타임 특가 유무, 주간 운영 시간, 제공 서비스 범위.</p>
+            </div>
+            <div class="card-ht">
+                <span class="tag">시간대 기준</span>
+                <h3>야간 (저녁 이후)</h3>
+                <p>본격적인 유흥 분위기를 원한다면 오후 8시 이후가 가장 활성화되는 시간입니다. 대부분의 업소가 풀코스로 운영되며, 인기 업소는 주말에 예약이 빠르게 마감되므로 미리 예약이 필수입니다. 주차장 혼잡도 감안하세요.</p>
+                <p><strong>확인 포인트:</strong> 예약 필요 시한, 주차 지원 가능 여부, 연장 조건.</p>
+            </div>
+            <div class="card-ht">
+                <span class="tag">목적 기준</span>
+                <h3>비즈니스 접대</h3>
+                <p>격식과 프라이버시가 중요한 자리라면 가양보다 마곡 지역의 프리미엄 업소를 권장합니다. 만약 가양 내에서 찾는다면, 호텔식 서비스와 별도 룸을 갖춘 상위 등급 업소를 선택하고, 사전에 테이블 세팅과 메뉴를 협의하는 것이 좋습니다.</p>
+                <p><strong>확인 포인트:</strong> VIP 룸 유무, 접객 매뉴얼, 차량 픽업 가능 여부.</p>
+            </div>
+            <div class="card-ht">
+                <span class="tag">목적 기준</span>
+                <h3>친목·개인 모임</h3>
+                <p>가양 중앙 상권에 위치한 업소는 접근성과 가격 대비 만족도가 높아 친구, 동료 모임에 자주 이용됩니다. 분위기가 너무 격식 있지 않으면서도 기본 서비스가 잘 갖춰진 곳이 많습니다. 사진이 있는 후기를 참고하면 분위기를 가늠하기 쉽습니다.</p>
+                <p><strong>확인 포인트:</strong> 룸 인테리어 스타일, 노래방 시스템, 기본 안주 구성.</p>
+            </div>
+        </div>
 
-        <!-- 상세 정보 카드 모음 -->
-        <section class="detail-cards mt-lg-3">
-            <h2 class="section-title text-center mb-4 border-bottom pb-2 neon-glow"> 영역별 심층 분석 (Deep Dive)</h2>
+        <p>이 외에도 성별 구성(남성만·여성만·혼성), 반려 동반 가능 여부 등 세부 조건이 있다면 예약 단계에서 꼭 문의하시기 바랍니다. 업소마다 규정이 다르기 때문에 사전 확인이 가장 중요합니다.</p>
 
-            <!-- 카테고리 1: 커피/디저트 집중 -->
-            <div class="card detail-card bg-void border-heavy hover-shadow transition duration-300 p-5 mb-4 flex items-center">
-                <div>
-                    <span class="icon text-neon-primary mr-3 fs-2">☕</span>
-                    <h3 class="card-title-small">BARISTA'S CHOICE: 커피 & 디저트</h3>
-                    <p class="card-body text-muted mt-1">여기가 진짜 맛집 판도라 상자. 원두의 퀄리티, 추출 방식에 따라 천지인 차이. "힙하다"는 말은 넣어둬.</p>
+        <hr class="section-divider">
+
+        <!-- 섹션 4: 처음 방문자 유의사항 -->
+        <h2>4. 처음 방문자를 위한 유의사항</h2>
+        <p>가양 풀싸롱을 처음 이용하는 경우 평소와 다른 문화나 규정에 당황할 수 있습니다. 기본적인 에티켓과 팁을 미리 알아두면 불편을 줄일 수 있습니다.</p>
+
+        <h3>예약과 도착</h3>
+        <p>예약은 방문 1~2일 전에 전화나 온라인으로 하는 것이 안전합니다. 인원과 성별, 원하는 시간대, 예산 범위를 정확히 전달하면 업소 측에서 적절한 룸과 코스를 준비해 줍니다. 당일 예약도 가능한 곳이 많지만, 주말 저녁이나 인기 업소는 최소 하루 전 예약을 권장합니다. 도착 시간을 지키는 것이 기본이며, 지각 시 연락을 꼭 하세요.</p>
+
+        <h3>복장과 매너</h3>
+        <p>비즈니스 캐주얼(깔끔한 셔츠·슬랙스 등) 이상이 무난합니다. 지나치게 캐주얼한 복장(반바지, 슬리퍼 등)은 일부 업소에서 입장을 제한할 수 있습니다. 내부에서는 직원에게 존중된 태도를 유지하고, 음주나 행동이 과도하지 않도록 주의합니다. 대부분의 업소가 매너 음주를 강조하며, 분란이나 소란 시 퇴장 조치될 수 있습니다.</p>
+
+        <h3>결제와 추가 비용</h3>
+        <p>기본 요금에 포함된 서비스와 별도로 추가되는 항목(주류 업그레이드, 연장, 특별 이벤트 등)을 미리 확인하세요. 카드 결제가 가능한 곳이 많지만, 일부 업소는 현금 할인을 제공하기도 하니 상황에 따라 준비하면 좋습니다. 영수증은 꼭 발급받으시기 바랍니다.</p>
+
+        <hr class="section-divider">
+
+        <!-- 섹션 5: FAQ -->
+        <h2>5. 자주 묻는 질문</h2>
+        <div class="faq-list-5d">
+            <details class="faq-item-8j">
+                <summary>예약 없이 그냥 방문해도 되나요?</summary>
+                <div class="faq-answer">
+                    가능한 업소도 있지만, 주말이나 야간 시간대에는 입장이 어려울 수 있습니다. 특히 4인 이상 단체나 특정 룸을 원한다면 반드시 사전 예약을 권장합니다. 예약 없이 방문할 경우 대기 시간이 길어지거나 원하는 조건과 다른 룸을 안내받을 수 있습니다.
                 </div>
-                <!-- [tel-link] 패턴 사용 -->
-                <a href="tel:+8190xxxxxxx" class="btn btn-neon-primary ml-auto"> 바로 연락하기</a>
-            </div>
-
-            <!-- 카테고리 2: 공간/분위기 집중 -->
-            <div class="card detail-card bg-void border-heavy hover-shadow transition duration-300 p-5 mb-4 flex items-center">
-                <div>
-                    <span class="icon text-neon-secondary mr-3 fs-2">️</span>
-                    <h3 class="card-title-small">VIBE CHECK: 분위기 & 공간</h3>
-                    <p class="card-body text-muted mt-1">인테리어에 진심이라면 여ᄀ기. 브루탈리즘, 미니멀리즘, 빈티지... 네가 원하는 '무드'를 찾아줄 곳들만 모았다.</p>
+            </details>
+            <details class="faq-item-8j">
+                <summary>1인 방문도 가능한가요?</summary>
+                <div class="faq-answer">
+                    대부분의 가양 풀싸롱은 2인 이상을 기준으로 운영됩니다. 1인 방문이 가능한 곳도 일부 있지만, 기본 요금이 2인 기준으로 책정되거나 추가 비용이 발생할 수 있습니다. 사전에 업소에 문의하여 정책을 확인하는 것이 좋습니다.
                 </div>
-                 <!-- [tel-link] 패턴 사용 -->
-                <a href="https://map.google.com/?q=Nakameguro+Cafe" class="btn btn-neon-secondary ml-auto">️ 위치 확인</a>
-            </div>
-
-             <!-- 카테고리 3: 특이점/숨겨진 보석 -->
-            <div class="card detail-card bg-void border-heavy hover-shadow transition duration-300 p-5 mb-4 flex items-center">
-                <div>
-                    <span class="icon text-neon-primary mr-3 fs-2"></span>
-                    <h3 class="card-title-small">GEM FINDER: 숨겨진 보석 (Hidden Gems)</h3>
-                    <p class="card-body text-muted mt-1">SNS에서 대박 난 곳 말고, 로컬들이 '아는' 진짜 찐 맛집들. 지도에서 벗어난 골목에 박혀있을 확률 높음.</p>
+            </details>
+            <details class="faq-item-8j">
+                <summary>주차 시설은 어떻게 되나요?</summary>
+                <div class="faq-answer">
+                    업소마다 차이가 큽니다. 가양역 인접 업소는 전용 주차장이 협소한 곳이 많아 인근 공영 주차장을 이용해야 할 수 있습니다. 반대로 대형 업소는 자체 주차장을 보유한 경우도 있습니다. 예약 시 주차 가능 여부와 비용(지원 여부)을 꼭 물어보세요. 발렛 파킹 서비스를 제공하는 곳도 있습니다.
                 </div>
-                 <!-- [tel-link] 패턴 사용 -->
-                <a href="tel:+813xxxxxxx" class="btn btn-neon-primary ml-auto"> 비밀리에 문의</a>
-            </div>
-
-        </section>
-
-        <!-- FAQ 섹션: 질문과 직설적인 답변 (Tone 강조) -->
-        <section class="faq-section mt-lg-5 border-t pt-4 neon-glow">
-            <h2 class="section-title text-center mb-4 border-bottom pb-2 neon-glow">❓ 흔히 묻는 질문 (Q&A: Straight Talk)</h2>
-
-            <!-- FAQ Item 1 -->
-            <div class="faq-item border-b py-3 flex items-start">
-                <span class="faq-icon text-neon-primary mr-3 mt-1 fs-4">Q</span>
-                <div>
-                    <p class="question bold-text mb-0">"다 가봤는데, 진짜 인생 카페 하나만 꼽아달라."</p>
-                    <!-- 답변: Direct Address -->
-                    <p class="answer text-muted ml-8 mt-1">**답변:** 글쎄. 니 취향이 뭔데? 근데 딱 하나만 고르라면, 커피 맛과 분위기 밸런스에서 '시대를 앞서간' **[카페 이름 Placeholder]**를 시도해봐. 후회 안 함.</p>
+            </details>
+            <details class="faq-item-8j">
+                <summary>코스와 가격대는 어느 정도인가요?</summary>
+                <div class="faq-answer">
+                    기본 코스는 보통 1~2시간 기준으로 1인당 10만~20만 원대가 가장 일반적입니다. 여기에 주류와 안주가 포함된 패키지, 연장 옵션 등에 따라 금액이 달라집니다. 마곡 지역 프리미엄 업소는 1인당 30만 원 이상도 있습니다. 홈페이지나 전화 문의를 통해 정확한 가격표를 확인하는 것이 좋습니다.
                 </div>
-            </div>
-
-             <!-- FAQ Item 2 -->
-            <div class="faq-item border-b py-3 flex items-start">
-                 <span class="faq-icon text-neon-secondary mr-3 mt-1 fs-4">Q</span>
-                <div>
-                    <p class="question bold-text mb-0">"혼자 가서 책 읽기 좋은 곳 있음?"</p>
-                    <!-- 답변: Strong Opinion -->
-                    <p class="answer text-muted ml-8 mt-1">**답변:** 복잡한 곳 가지 마라. 조용히 구석 자리 잡고, 창가 쪽 테이블 공략해. **[조용한 카페 Placeholder]**는 소음 수준이 '카페 정도'로 딱 적당해서 집중력 킬러임.</p>
+            </details>
+            <details class="faq-item-8j">
+                <summary>여성 방문객도 이용할 수 있나요?</summary>
+                <div class="faq-answer">
+                    물론 가능합니다. 여성 고객을 위한 코스나 이벤트를 운영하는 업소도 늘고 있습니다. 다만 일부 업소는 남성 전용 또는 남성 위주의 서비스를 제공하기도 하므로, 여성만의 모임이나 여성 동반 시 업소 성격을 미리 확인하는 것이 좋습니다.
                 </div>
-            </div>
+            </details>
+        </div>
 
-             <!-- FAQ Item 3 -->
-            <div class="faq-item pt-0 flex items-start">
-                 <span class="faq-icon text-neon-primary mr-3 mt-1 fs-4">Q</span>
-                <div>
-                    <p class="question bold-text mb-0">"가성비 최고, 그러나 힙한 곳은?"</p>
-                    <!-- 답변: Brutalist/Fact Check -->
-                    <p class="answer text-muted ml-8 mt-1">**답변:** '가성비'와 '힙함'은 동의어가 아님. 근데 두 마리 토끼 잡으려면 **[가성비 카페 Placeholder]**를 가봐라. 비주얼 ㅆㅅㅌㅊ에 가격은 미쳤음.</p>
-                </div>
-            </div>
+        <hr class="section-divider">
 
-        
-<div class="seo-visual-divider" role="separator" aria-label="Nakameguro cafe 안내 구분선" style="margin:80px 0;height:1px;background:#666666;opacity:0.1"></div>
-</section>
+        <!-- 섹션 6: 결론 -->
+        <h2>6. 종합 정리</h2>
+        <p>가양 풀싸롱은 접근성, 업소 다양성, 인접 지역과의 연계성에서 뛰어난 선택지입니다. 이 가이드에서 제시한 <strong>지역별 특성</strong>, <strong>인원·시간대·목적별 기준</strong>, <strong>유의사항</strong>을 참고하면 원하는 조건에 가장 가까운 업소를 효율적으로 고를 수 있습니다.</p>
+        <p>마지막으로, 업소 선택만큼 중요한 것은 <strong>사전 예약과 명확한 의사 전달</strong>입니다. 모호한 요청은 예상과 다른 서비스로 이어질 수 있으므로, 인원, 예산, 원하는 분위기를 구체적으로 이야기하고 방문하세요. 이 가이드가 여러분의 만족스러운 경험에 도움이 되기를 바랍니다.</p>
 
+        <hr class="section-divider" style="margin-top:3rem;">
+
+        <div class="flex-center" style="justify-content:center; gap:6px; padding:1rem 0 2rem; color:#999; font-size:0.875rem;">
+            <span>💡 이 콘텐츠는 정보 제공 목적으로 작성되었습니다.</span>
+        </div>
     </main>
 
-    <!-- 푸터 영역 -->
-    <footer class="page-footer border-t mt-lg-5">
-        <div class="container text-center py-4">
-            <p class="text-muted">&copy; 2024 Nakameguro Cafe Guide. All Rights Reserved.</p>
-            <small class="text-neon-primary block mt-1">— Brutalist meets Avant-Garde in the Neon Void —</small>
+    <footer class="footer-6z">
+        <div class="m-wrap-2kpa">
+            <p>가양 풀싸롱 가이드 · gayang-fullsalon-note.pickdesk.online</p>
+            <p style="margin-top:4px;">문의 및 제보 · <a href="mailto:contact@pbdummy.kr" style="color:#666;">contact@pbdummy.kr</a></p>
+            <p style="margin-top:20px; color:#aaa;">© 2025 · All rights reserved.</p>
         </div>
     </footer>
 
+    <script>
+        // Hamburger toggle
+        (function(){
+            const btn = document.getElementById('hamBtn');
+            const nav = document.getElementById('mainNav');
+            if(btn && nav) {
+                btn.addEventListener('click', function(){
+                    nav.classList.toggle('open');
+                });
+                // close on link click (mobile)
+                nav.querySelectorAll('a').forEach(function(link){
+                    link.addEventListener('click', function(){
+                        nav.classList.remove('open');
+                    });
+                });
+            }
+            // Sticky header shadow
+            const header = document.getElementById('top-header');
+            if(header) {
+                window.addEventListener('scroll', function(){
+                    if(window.scrollY > 20) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                });
+            }
+        })();
+    </script>
 </body>
 </html>

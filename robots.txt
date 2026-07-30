@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gayang-fullsalon-note.pickdesk.online/sitemap.xml
-Sitemap: https://gayang-fullsalon-note.pickdesk.online/sitemap-pages.xml
+Sitemap: https://guro-local-info.pbn-builder.xyz/sitemap.xml
+Sitemap: https://guro-local-info.pbn-builder.xyz/sitemap-pages.xml
